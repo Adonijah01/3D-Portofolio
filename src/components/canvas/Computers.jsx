@@ -6,39 +6,40 @@ import CanvasLoader from '../Loader';
 const Computers = () => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
   return (
-    <mesh>
-      <hemisphereLight intensity={0.15}
-      groundColor={'black'} />
-      <pointLight intensity={1} />
-      <spotLight
-        position={[0, 10, 0]} />
-      <directionalLight intensity={0.8} position={[5, 10, 5]} />
+    <group>
+      <hemisphereLight intensity={0.15} groundColor="black" />
+      <pointLight intensity={1} position={[0, 10, 0]} />
+
       <spotLight
         position={[-20, 50, 10]}
-        angle={Math.PI / 4}  // Adjust the angle as needed
-        penumbra={0.1}       // Adjust the penumbra as needed
+        angle={0.3} // Adjust the angle as needed
+        penumbra={0.1} // Adjust the penumbra as needed
         intensity={1}
+        castShadow
+        shadow-mapSize-width={1024}
+        shadow-mapSize-height={1024}
       />
-      <primitive 
+      <primitive
         object={computer.scene}
         scale={0.75}
         position={[0, -4.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
+        castShadow // Ensure the model casts shadows
       />
-    </mesh>
+    </group>
   );
 };
 
 const ComputersCanvas = () => {
   return (
     <Canvas
-      frameLoop="demand"
-      shadows
+      shadows // Enable shadows on the canvas
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
+        <ambientLight intensity={0.5} /> {/* Add ambient light */}
         <Computers />
       </Suspense>
       <Preload all />
