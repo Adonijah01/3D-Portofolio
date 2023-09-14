@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
-
+import { SectionWrapper } from '../hoc';
 const ServiceCard = ( {index, title, icon} ) => {
   return (
     <Tilt className= 'xs:w-[250px] w-full'>
@@ -26,7 +26,8 @@ className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     <img src={icon} alt={title}
     className='w-16 h-16 object-contain'
     />
-    <h3>{title}</h3>
+    <h3 className='text-white text-[20px]
+    font-bold text-center'>{title}</h3>
 
 
   </div>
@@ -72,4 +73,4 @@ real-world problems. Let's work together to build something awesome!
   )
 }
 
-export default About
+export default SectionWrapper (About, 'about')
