@@ -134,21 +134,21 @@ import {
       company_name: "CodeJIKA",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2023 - Now",
+      date: "March 2023 - Present",
       points: [
       'Introducing Coding to young High School Students',
       'Teaching them how to code in HTML, CSS, JavaScript and other related technologies',
       'Helping them build their own projects',
       'Helping them with their school projects',
-      
+
       ],
     },
     {
       title: "React Native Developer",
-      company_name: "Tesla",
+      company_name: "Free-lance",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -158,10 +158,10 @@ import {
     },
     {
       title: "Web Developer",
-      company_name: "Shopify",
+      company_name: "Free-Lance",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -171,10 +171,10 @@ import {
     },
     {
       title: "Full stack Developer",
-      company_name: "Meta",
+      company_name: "MERN [MongoDB, Express, React, Node]",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -204,10 +204,10 @@ import {
     {
       testimonial:
         "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      name: "Victor Kiplangat",
+      designation: "Manager",
+      company: "Vic Enterprises",
+      image: "https://randomuser.me/api/portraits/men/6.jpg",
     },
   ];
   
@@ -252,7 +252,7 @@ import {
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/adonijah01",
+      source_code_link: "https://github.com/",
     },
     {
       name: "Trip Guide",
