@@ -7,8 +7,11 @@ const Computers = () => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
   return (
     <mesh>
-      <ambientLight intensity={0.3} />
-      <hemisphereLight intensity={0.6} skyColor="#e0e0e0" groundColor="#404040" position={[0, 10, 0]} />
+      <hemisphereLight intensity={0.15}
+      groundColor={'black'} />
+      <pointLight intensity={1} />
+      <spotLight
+        position={[0, 10, 0]} />
       <directionalLight intensity={0.8} position={[5, 10, 5]} />
       <spotLight
         position={[-20, 50, 10]}
