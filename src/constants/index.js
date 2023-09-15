@@ -117,7 +117,7 @@ import {
   const experiences = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
+      company_name: "Free-Lance",
       icon: starbucks,
       iconBg: "#383E56",
       date: "March 2023 - June 2023",
@@ -187,23 +187,23 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
+        "I thought it was impossible to make a website as beautiful as our product, but Adonijah proved me wrong.",
+      name: "Janet Kering",
       designation: "CFO",
       company: "Acme Co",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
+        "I've never met a web developer who truly cares about their clients' success like Adonijah does.",
+      name: "Eric",
       designation: "COO",
-      company: "DEF Corp",
+      company: " Naivas Limited",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        "Hey Adonijah, I just wanted to say thanks for doing such a great job on our travel website.",
       name: "Victor Kiplangat",
       designation: "Manager",
       company: "Vic Enterprises",
