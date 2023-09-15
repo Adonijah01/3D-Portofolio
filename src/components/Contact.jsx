@@ -7,6 +7,10 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+// TqhA-1hVcNt-sqoLC
+// template_u18accs
+// service_zsgto0z
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -19,7 +23,7 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { target } = e;
-    const { name, value } = target;
+    const { name, value } = e. target;
 
     setForm({
       ...form,
@@ -33,16 +37,17 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_zsgto0z',
+        'template_u18accs',
+          
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Adonijah Kiplimo",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "adnisdevelopers@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'TqhA-1hVcNt-sqoLC'
       )
       .then(
         () => {
@@ -59,7 +64,7 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert("Something went wrong. Please try again.");
         }
       );
   };
