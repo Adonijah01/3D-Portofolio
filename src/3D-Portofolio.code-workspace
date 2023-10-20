@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Downloads/public/public"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "3D-Portofolio"
+	}
+}

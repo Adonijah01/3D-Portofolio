@@ -52,7 +52,7 @@ const About = () => {
    className='mt-4 text-secondary text-[17px]
    max-w-3xl leading-[30px]'
    >
-I'm a skilled Software Developer with 
+    I am a Cybersecurity and Network Security Enthusiast also a Software Developer with 
 experience in building web applications and expertise in frameworks
 like React, Next, Express, Three.js and MongoDB. 
 I'm also a UI/UX designer. I'm a quick learner and 
