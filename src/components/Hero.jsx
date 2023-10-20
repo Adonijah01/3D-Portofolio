@@ -19,8 +19,8 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Adonijah</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop web, user<br
-            className='sm:block hidden'/> interfaces and mobile applications using MERN stack.
+            I a Cybersecurity and Network Security<br
+            className='sm:block hidden'/> Enthusiast also  building projects using <br> MERN stack.</br>
             </p>
         </div>
         </div>
